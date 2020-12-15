@@ -167,7 +167,7 @@ def ga(population, list_weight, list_size, list_value, max_weight, max_size):
         if abs(min(list_last_value) - max(list_last_value)) <= min_value:
             break
 
-        return (best_individual)
+    return (best_individual)
 
 #основная программа
 #загрузка и обработка начальных данных
