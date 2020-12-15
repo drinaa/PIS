@@ -105,10 +105,19 @@ def crossing (parents, list_weight, list_size, list_value):
         first_child = new_child(first_parent, second_parent)
         second_child = new_child(first_parent, second_parent)
         # вместо нежизнеспособного ребенка возвращаем родителя
-        if fitness_func(first_child,  list_weight, list_size, list_value) == 0:
-            first_child = first_parent
-        if fitness_func(second_child,  list_weight, list_size, list_value) == 0:
-            second_child = second_parent
+        flag1 = False
+        flag2 = False
+        while flag1 == False:
+            if fitness_func(first_child,  list_weight, list_size, list_value) == 0:
+                one_ind = first_child.index(1)
+                first_child[one_ind] = 0
+            else: flag1 = True
+        while flag2 == False:
+            if fitness_func(second_child,  list_weight, list_size, list_value) == 0:
+                one_ind = second_child.index(1)
+                second_child[one_ind] = 0
+            else:
+                flag2 = True
 
         children.append(first_child)
         children.append(second_child)
