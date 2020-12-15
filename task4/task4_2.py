@@ -79,7 +79,16 @@ def new_child(f_parent, s_parent):
     for elem in range(30):
         rnd_ind = random.randint(0, 1)
         individual[elem] = rnd_ind
-    return individual
+        
+    i = 0
+    for elem in individual:
+        if elem == 0:
+            child.append(f_parent[i])
+        elif elem == 1:
+            child.append(s_parent[i])
+        i += 1
+
+    return child
 
 #скрещивание
 def crossing (parents, list_weight, list_size, list_value):
