@@ -1,0 +1,6 @@
+User 34
+98     ('Silence of the Lambs, The (1991)', '01-Jan-1991') 5.000     
+603    ('Rear Window (1954)            ', '01-Jan-1954') 5.000     
+100    ('Fargo (1996)                  ', '14-Feb-1997') 5.000     
+408    ('Close Shave, A (1995)         ', '28-Apr-1996') 5.000     
+318    ('Schindler's List (1993)       ', '01-Jan-1993') 5.000     
